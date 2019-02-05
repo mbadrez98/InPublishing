@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout2">
+            <ImageView
+                android:id="@+id/downloadImgCover"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="centerInside"
+                android:background="#ffe3e4e5" />
+            <ImageView
+                android:src="@drawable/ic_update"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/downloadImgUpdate"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/downloadOverlay"
+            android:background="#74000000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/downloadProgress"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:progress="50"
+        android:layout_height="8dp"
+        android:minHeight="4dp"
+        android:layout_marginBottom="-8dp"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:baselineAligned="false"
+        android:layout_height="68dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="0dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="7dp">
+            <TextView
+                android:id="@+id/downloadTxtDettagli"
+                android:textSize="13dip"
+                android:textColor="#ffaaaaaa"
+                android:text="Autore: ciao ciao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/downloadTxtTitolo"
+                android:ellipsize="marquee"
+                android:text="kkkk fkjgdfhghdu dfgjdhgoduh p p p p p p p p p p p p  dfjkngkdng dfjngdjng dnfgjdng i i i i i i i i i i i i"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ff000000"
+                android:layout_weight="1"
+                android:lines="2"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-light"
+                android:typeface="sans" />
+        </LinearLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout1">
+            <ImageView
+                android:src="@drawable/ic_download"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDownload"
+                android:hapticFeedbackEnabled="false"
+                android:scaleType="center"
+                android:paddingTop="7dp"
+                android:paddingBottom="9dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="2dp" />
+            <ImageView
+                android:src="@drawable/ic_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnOpen"
+                android:hapticFeedbackEnabled="false"
+                android:paddingTop="7dp"
+                android:paddingBottom="9dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="2dp"
+                android:scaleType="center"
+                android:visibility="gone" />
+            <ImageView
+                android:src="@drawable/ic_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnStop"
+                android:hapticFeedbackEnabled="false"
+                android:paddingTop="7dp"
+                android:paddingBottom="9dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="2dp"
+                android:scaleType="center"
+                android:visibility="gone" />
+        <!--<Button
+                android:text="99,99 €"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnBuy"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                android:textColor="#fff4511e"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp" />-->
+            <TextView
+                android:text="99,99 €"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnBuy"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#ff737373"
+                android:textSize="15dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

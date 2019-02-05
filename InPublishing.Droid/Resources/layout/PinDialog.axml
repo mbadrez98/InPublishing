@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    p1:padding="15dp">
+    <EditText
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtPin"
+        p1:inputType="numberPassword"
+        p1:hint="PIN"
+        p1:visibility="visible"
+        p1:layout_marginBottom="15dp"
+        p1:password="true"
+        p1:numeric="integer" />
+    <EditText
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtPin2"
+        p1:inputType="numberPassword"
+        p1:hint="@string/set_pinRepeat"
+        p1:imeOptions="actionDone"
+        p1:password="true" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:gravity="center_vertical"
+        p1:layout_marginTop="5dp">
+        <TextView
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:id="@+id/lblSuccess"
+            p1:textColor="@android:color/holo_red_dark"
+            p1:visibility="gone"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:text="PIN non corrispondente"
+            p1:gravity="center_vertical"
+            p1:layout_marginTop="0dp" />
+    </LinearLayout>
+</LinearLayout>

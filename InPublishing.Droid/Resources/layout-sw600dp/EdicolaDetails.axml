@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:background="@android:color/background_light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="20dp">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/imgCover"
+        android:scaleType="centerInside"
+        android:layout_width="240dp"
+        android:layout_height="360dp"
+        android:layout_marginRight="10dp" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Titolo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitolo"
+                android:textColor="@android:color/primary_text_light"
+                android:maxLines="3"
+                android:gravity="left" />
+            <TextView
+                android:text="Autore"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAutore"
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_marginBottom="5dp"
+                android:gravity="left" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/txtPubblicato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pubblicato il "
+                android:layout_marginTop="70dp"
+                android:gravity="left" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/txtScadenza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scade il"
+                android:layout_marginTop="5dp"
+                android:gravity="left" />
+        </LinearLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout2"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/relativeLayout3"
+                android:background="#fff2f2f2" />
+            <Button
+                android:text="Elimina"
+                android:id="@+id/btnDelete"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/primary_text_light"
+                android:paddingTop="10dp"
+                android:gravity="right"
+                android:background="@android:color/transparent" />
+            <Button
+                android:text="Apri"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnOpen"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/primary_text_light"
+                android:gravity="left"
+                android:background="@android:color/transparent"
+                android:paddingTop="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

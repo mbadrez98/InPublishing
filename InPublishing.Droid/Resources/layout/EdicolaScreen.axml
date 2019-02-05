@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<legacybar.library.bar.LegacyBar
+        android:id="@+id/actionbar"
+        style="@style/actionbar" />-->
+    <GridView
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="7dp"
+        android:verticalSpacing="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:choiceMode="multipleChoiceModal"
+        android:id="@+id/edicolaGrid"
+        android:scrollbars="none"
+        android:padding="5dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/blue_list_selector_holo_light"
+        android:clipToPadding="false" />
+</LinearLayout>

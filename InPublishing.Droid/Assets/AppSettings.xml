@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Settings>
+	<SwipeEnabled>True</SwipeEnabled>
+	<RotationEnabled>True</RotationEnabled>
+	<ToolbarVisible>True</ToolbarVisible>
+	<BottombarVisible>True</BottombarVisible>
+	<NavigationBarColor>ffffff</NavigationBarColor>
+	<TintColor>737373</TintColor>
+	<ButtonColor>737373</ButtonColor>
+	<MenuFondoColor>999999</MenuFondoColor>
+	<MenuTextColor>ffffff</MenuTextColor>
+	<MenuSelColor>808080</MenuSelColor>
+	<ReadPdf>True</ReadPdf>
+	<BookPage>True</BookPage>
+    <DownloadUrl>https://my.server.com/</DownloadUrl>
+	<Notifications>True</Notifications>
+	<Singola>False</Singola>
+	<Edicola>True</Edicola>
+	<Settings>True</Settings>
+	<Download>True</Download>	
+	<DownPasswd>False</DownPasswd>
+	<DownUtenti>True</DownUtenti>
+	<ShareDir>True</ShareDir>
+	<PublicKey>my.android.public.key</PublicKey>
+	<InpubVersion>6.6.5</InpubVersion>
+	<AppId>my.app.id</AppId>
+	<PinEnabled>True</PinEnabled>
+	<PasswordReset>True</PasswordReset>
+	<EdicolaSearch>True</EdicolaSearch>
+	<AnalyticsID>UA-XXXXXXXX-X</AnalyticsID>
+	<InAppPurchase>True</InAppPurchase>
+	<EdicolaOrder>0</EdicolaOrder>
+	<Credits>
+	<![CDATA[
+My Company
+My address
+My address 2
+Tel: 12-123456
+Email: mail@my.server.com
+Web: https://my.server.com
+	]]>
+</Credits>
+</Settings>

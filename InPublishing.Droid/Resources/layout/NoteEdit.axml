@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#F9EB65"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp">
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtNote"
+        android:text="dègkhkghfkgh ldkgkmdlg lkgnkd gkl dkgkd gk dg d g dgldlngndg ingdngddjgd  dgidjgkdjg  dgjdkjgidjg  d gojdigjd  difgjdijg  dgjdjg "
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+    <ImageButton
+        android:src="@drawable/ic_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOption"
+        android:scaleType="center"
+        android:background="@android:color/transparent" />
+</LinearLayout>

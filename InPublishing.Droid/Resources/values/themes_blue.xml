@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="Blue" parent="@style/_Blue">
+	<!--<item name="android:actionBarItemBackground">@drawable/selectable_background_blue</item>-->
+	<item name="android:actionBarStyle">@style/ActionBarBlue</item>
+	<item name="android:actionOverflowButtonStyle">@style/OverFlow.Dark</item>
+	<item name="android:popupMenuStyle">@style/PopupMenu</item>
+	<item name="android:actionModeStyle">@style/ActionModeBlue</item>
+	<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Blue</item>
+	<item name="android:actionModeCloseDrawable">@drawable/ic_cab_done</item>
+	<item name="android:actionMenuTextColor">#ffffff</item>
+	<item name="android:textViewStyle">@style/TextView</item>
+	<item name="android:homeAsUpIndicator">@drawable/ic_ab_back</item> 
+	<!--<item name="android:alertDialogStyle">@style/AlertDialogStyle</item>-->
+	<item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+	<!--<item name="android:dialogTheme">@style/CustomDialogTheme</item>-->
+	<item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+	<!--<item name="mainColor">#006aad</item>-->
+		<item name="android:colorAccent">#ffff0000</item>
+  </style>
+
+  <style name="_Blue" parent="android:Theme.Holo.Light">
+    <item name="android:textColorHighlight">#99737373</item>
+    <item name="android:textSelectHandleLeft">@drawable/blue_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/blue_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/blue_text_select_handle_middle</item>
+    <!--<item name="android:listChoiceIndicatorMultiple">@drawable/blue_btn_check_holo_light</item>
+    <item name="android:listChoiceIndicatorSingle">@drawable/blue_btn_radio_holo_light</item>
+    <item name="android:buttonStyle">@style/ButtonBlue</item>
+    <item name="android:imageButtonStyle">@style/ImageButtonBlue</item>
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerBlue</item>
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarBlue</item>
+    <item name="android:seekBarStyle">@style/SeekBarBlue</item>
+    <item name="android:ratingBarStyle">@style/RatingBarBlue</item>
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigBlue</item>
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallBlue</item>
+    <item name="android:buttonStyleToggle">@style/ToggleBlue</item>
+    <item name="android:listChoiceBackgroundIndicator">@drawable/blue_list_selector_holo_light</item>
+    <item name="android:activatedBackgroundIndicator">@drawable/blue_activated_background_holo_light</item>
+    <item name="android:fastScrollThumbDrawable">@drawable/blue_fastscroll_thumb_holo</item>-->
+  </style>
+
+</resources>

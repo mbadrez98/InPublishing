@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:src="@drawable/icon_big"
+            android:layout_height="144dp"
+            android:id="@+id/imgLogo"
+            android:layout_marginBottom="30dp"
+            android:scaleType="centerInside"
+            android:minWidth="20dp"
+            android:maxWidth="144dp"
+            android:minHeight="20dp"
+            android:maxHeight="144dp"
+            android:layout_width="144dp"
+            android:layout_marginTop="30dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/linearLayout1"
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout2"
+                android:layout_weight="0.72">
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/txtUsername"
+                    android:hint="User / Email"
+                    android:maxWidth="250dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/txtPassword"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Result"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblResult"
+                    android:gravity="center"
+                    android:textColor="#ffef5350"
+                    android:padding="5dp" />
+                <Button
+                    android:text="REGISTER"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/btnRegister"
+                    android:textColor="#ffffffff"
+                    android:background="#737373" />
+                <TextView
+                    android:text="Text jhh kjk jk jk jk jk jk kj kj kjk jk jk jk jk jk jk jkj  kjk j kj kj "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblPrivacy"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

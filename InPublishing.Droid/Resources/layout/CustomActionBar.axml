@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/btnBack"
+        android:drawableLeft="@drawable/ic_ab_back"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:textSize="18dp"
+        style="@style/TitleText.Dark" />
+</RelativeLayout>

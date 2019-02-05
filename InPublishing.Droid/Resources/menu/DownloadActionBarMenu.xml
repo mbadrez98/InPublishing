@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/EdicolaActionBarMenu_Search"
+    android:title="Search"
+    android:icon="@drawable/ic_action_search"
+    android:showAsAction="always" /> 
+  <item android:id="@+id/EdicolaActionBarMenu_Refresh"
+    android:title="Refresh"
+    android:icon="@drawable/ic_action_refresh"
+    android:showAsAction="always" />  
+  <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="11111"
+        android:showAsAction="always">
+        <menu>
+           <item android:id="@+id/EdicolaActionBarMenu_Layout"
+		    android:title="List"
+		    android:icon="@drawable/ic_action_view_as_list"/>
+		  <item android:id="@+id/EdicolaActionBarMenu_Order"
+		    android:title="Sorting"
+		    android:icon="@drawable/ic_action_sort" />
+		  <item android:id="@+id/EdicolaActionBarMenu_Download"
+		    android:title="Download all"
+		    android:icon="@drawable/ic_download" />
+		 <item android:id="@+id/EdicolaActionBarMenu_Subscribe"
+		    android:title="Subscribe"
+		    android:icon="@drawable/ic_subscribe" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+			android:key="Pin"
+            android:title="PIN di Accesso">       
+
+        <SwitchPreference
+                android:key="PinActive"
+                android:title="PIN Enabled"
+                android:summary="" />       
+
+    </PreferenceCategory>
+    <PreferenceCategory
+			android:key="Download"
+            android:title="Account">       
+
+        <SwitchPreference
+                android:key="DownActive"
+                android:title="Download Enabled"
+                android:summary="" />
+
+        <Preference
+                android:key="DownUsername"
+                android:title="Account"
+                android:summary="" />
+        
+		<Preference
+                android:key="DownLogout"
+                android:title="Disconetti"
+                android:summary="Effettua l'accesso come utente pubblico" />
+              
+		<Preference
+                android:key="DownReset"
+                android:title="Dimenticato la password?"
+                android:summary="Reset della password" />
+
+    </PreferenceCategory>
+	<PreferenceCategory
+			android:key="Notifications"
+            android:title="Notifiche">       
+
+        <Preference
+                android:key="NotTest"
+                android:title="Esempio di notifica"
+                android:summary="Una notifica verrà inviata a questo dispositivo" />       
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

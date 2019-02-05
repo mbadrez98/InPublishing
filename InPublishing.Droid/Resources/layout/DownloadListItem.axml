@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/downloadImgCover"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:background="#ffe3e4e5" />
+            <ImageView xmlns:tools="http://schemas.android.com/tools"
+                android:src="@drawable/ic_update"
+                android:visibility="invisible"
+                android:id="@+id/downloadImgUpdate"
+                android:layout_width="40dp"
+                android:layout_height="35dp" />
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:id="@+id/downloadOverlay"
+            android:background="#74000000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="top"
+                android:id="@+id/linearLayout3">
+                <TextView
+                    android:id="@+id/downloadTxtDettagli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dip"
+                    android:textColor="#ffaaaaaa"
+                    android:text="Autore"
+                    android:fontFamily="sans-serif" />
+                <TextView
+                    android:id="@+id/downloadTxtTitolo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="15dip"
+                    android:text="Titolo"
+                    android:fontFamily="sans-serif-light"
+                    android:lines="1" />
+            </LinearLayout>
+            <FrameLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/frameLayout1">
+                <ImageView
+                    android:src="@drawable/ic_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnDownload"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="center"
+                    android:paddingRight="3dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="8dp" />
+                <ImageView
+                    android:src="@drawable/ic_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnOpen"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="center"
+                    android:paddingRight="3dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone" />
+                <ImageView
+                    android:src="@drawable/ic_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnStop"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="center"
+                    android:paddingRight="3dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone" />
+                <TextView
+                    android:text="99,99 €"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnBuy"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    android:textColor="#fff4511e"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/downloadProgress"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:progress="50"
+            android:layout_height="8dp"
+            android:minHeight="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    </LinearLayout>
+</LinearLayout>

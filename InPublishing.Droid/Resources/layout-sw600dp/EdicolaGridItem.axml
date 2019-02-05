@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1">
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/edicolaImgCover"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerInside"
+            android:background="#ffe3e4e5"
+            tools:visibility="visible" />
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            android:src="@drawable/ic_update"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:id="@+id/edicolaImgUpdate" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:baselineAligned="false"
+        android:layout_height="68dp">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="0dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp">
+            <TextView
+                android:id="@+id/edicolaTxtDettagli"
+                android:textSize="13dip"
+                android:textColor="#ffaaaaaa"
+                android:text="Autore: ciao ciao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/edicolaTxtTitolo"
+                android:ellipsize="marquee"
+                android:fontFamily="sans-serif-light"
+                android:text="kkkk fkjgdfhghdu dfgjdhgoduh p p p p p p p p p p p p  dfjkngkdng dfjngdjng dnfgjdng i i i i i i i i i i i i"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@android:color/primary_text_light"
+                android:layout_weight="1"
+                android:lines="2"
+                android:layout_alignParentBottom="true"
+                android:typeface="sans" />
+        </RelativeLayout>
+        <ImageView
+            android:src="@drawable/ic_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edBtnDownload"
+            android:paddingTop="7dp"
+            android:visibility="gone" />
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edProgress"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:paddingTop="1dp" />
+        <ImageView
+            android:src="@drawable/ic_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInfo"
+            android:paddingTop="7dp"
+            android:paddingBottom="9dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="2dp" />
+    </LinearLayout>
+</LinearLayout>

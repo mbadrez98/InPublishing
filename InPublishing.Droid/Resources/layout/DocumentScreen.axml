@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:id="@+id/contentLayout"
+    p1:background="#ff000000">
+<!--    <android.support.v4.view.ViewPager
+        p1:id="@+id/viewPager"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_weight="1" />-->
+    <FrameLayout
+        p1:id="@+id/viewerWrap"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_weight="1"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_gravity="top" />
+    <inpublishing.BottomBar
+        p1:id="@+id/bottomBar"
+        p1:layout_width="match_parent"
+        p1:layout_alignParentBottom="true"
+        p1:layout_height="?android:attr/actionBarSize" />
+    <inpublishing.PagePreviewOverlay
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/pagePreviewOverlay"
+        p1:layout_centerHorizontal="true"
+        p1:layout_above="@+id/bottomBar"
+        p1:layout_marginBottom="15dp" />
+</RelativeLayout>

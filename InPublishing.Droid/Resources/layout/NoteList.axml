@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:id="@+id/viewerPageList"
+        android:clipToPadding="false"
+        android:layout_weight="90" />
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1"
+        android:layout_weight="10"
+        android:padding="5dp">
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSend"
+            android:textColor="@android:color/primary_text_dark"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:textColorHint="@android:color/primary_text_dark"
+            android:textColorLink="@android:color/primary_text_dark" />
+    </FrameLayout>
+</LinearLayout>

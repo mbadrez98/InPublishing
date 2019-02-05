@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:gravity="center_vertical">
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout1">
+        <ImageView
+            android:id="@+id/edicolaImgCover"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:background="#ffe3e4e5" />
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            android:src="@drawable/ic_update"
+            android:visibility="invisible"
+            android:id="@+id/edicolaImgUpdate"
+            android:layout_width="40dp"
+            android:layout_height="35dp" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/edicolaTxtDettagli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dip"
+            android:textColor="#ffaaaaaa"
+            android:text="Autore: ciao ciao"
+            android:fontFamily="sans-serif" />
+        <TextView
+            android:id="@+id/edicolaTxtTitolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="15dip"
+            android:text="Titolo"
+            android:fontFamily="sans-serif-light"
+            android:lines="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/ic_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edBtnDownload"
+        android:paddingTop="7dp"
+        android:visibility="gone" />
+    <ProgressBar
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edProgress"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:paddingTop="1dp" />
+    <ImageView
+        android:src="@drawable/ic_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInfo"
+        android:layout_marginLeft="5dp"
+        android:scaleType="center"
+        android:paddingRight="3dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>

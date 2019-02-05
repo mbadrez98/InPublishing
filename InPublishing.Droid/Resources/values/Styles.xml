@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <style name="Splash" parent="android:Theme.Holo.Light">
+    <!--<item name="android:windowBackground">@drawable/splash_bg</item>-->
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+
+		<item name="android:windowTranslucentStatus">true</item>
+	<item name="android:windowBackground">@android:color/white</item>
+  </style>
+  <style name="Theme" parent="android:Theme.Holo">
+    <!---<item name="android:displayOptions">showHome|homeAsUp|showTitle</item>-->
+	<!--<item name="android:icon">@android:color/transparent</item>-->
+	<item name="android:windowFullscreen">true</item>
+	<item name="android:windowActionBar">true</item>
+
+  </style>
+  <style name="Theme.Light" parent="android:Theme.Holo.Light">
+    <!---<item name="android:displayOptions">showHome|homeAsUp|showTitle</item>-->
+	<!--<item name="android:icon">@android:color/transparent</item>-->
+	<item name="android:windowFullscreen">true</item>
+	<item name="android:windowActionBar">true</item> 
+
+  </style>
+  <style name="Theme.NoActionBar" parent="android:Theme.Holo.Light">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  
+   <style name="NotificationText">
+    <item name="android:textColor">?android:attr/textColorPrimary</item>
+  </style>
+
+  <style name="NotificationTextShadow" parent="NotificationText">
+    <item name="android:textColor">?android:attr/textColorPrimary</item>
+    <item name="android:shadowColor">@android:color/background_dark</item>
+    <item name="android:shadowDx">1.0</item>
+    <item name="android:shadowDy">1.0</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+
+  <style name="NotificationTitle">
+    <item name="android:textColor">?android:attr/textColorPrimary</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="ButtonBackground">
+    <item name="android:background">@android:color/background_dark</item>
+  </style>
+
+  <style name="OverFlow.Dark" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+        <!--<item name="android:minWidth">0dip</item>
+	    <item name="android:maxWidth">40dip</item>
+	    <item name="android:paddingLeft">0dip</item>
+	    <item name="android:paddingRight">0dip</item>-->
+    </style>
+
+  <style name="PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/blue_menu_dropdown_panel</item>
+    </style>
+  
+  <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+ 
+  <style name="TitleText.Dark" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+	    <item name="android:textColor">@android:color/primary_text_light</item>
+	    <item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="SubtitleText.Dark" parent="android:TextAppearance.Holo.Widget.ActionBar.Subtitle">
+	    <item name="android:textColor">@android:color/secondary_text_light</item>
+	    <item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="AlertBody">
+		 <item name="android:textColor">#000000</item>
+ 		 <item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@android:color/white</item>
+    <item name="android:bottomDark">@android:color/holo_red_light</item>
+    <item name="android:bottomMedium">@android:color/white</item>
+    <item name="android:centerBright">@android:color/white</item>
+    <item name="android:centerDark">@android:color/holo_orange_light</item>
+    <item name="android:centerMedium">@android:color/white</item>
+    <item name="android:fullBright">@android:color/holo_orange_light</item>
+    <item name="android:fullDark">@android:color/holo_orange_light</item>
+    <item name="android:topBright">@android:color/holo_blue_light</item>
+    <item name="android:topDark">@android:color/holo_blue_light</item>
+</style>
+
+<style name="AlertDialogStyle" parent="@android:style/Theme.Holo.Dialog">
+	<item name="android:textColor">@android:color/holo_orange_light</item>
+</style>
+
+<style name="AlertDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+	<item name="android:textColorPrimary">@android:color/secondary_text_light</item>
+	<item name="android:windowBackground">@android:color/transparent</item>
+	<item name="android:windowContentOverlay">@null</item>
+	<item name="android:windowIsFloating">true</item>
+	<item name="android:windowTitleStyle">@style/AlertDialog.DialogWindowTitle</item>
+</style>
+
+<style name="AlertDialog.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+	<item name="android:textColor">@android:color/primary_text_light</item>
+	<!--<item name="android:fontFamily">sans-serif-condensed</item>
+	<item name="android:textStyle">bold</item>-->
+</style>
+
+
+<style name="ActionBarBlue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:titleTextStyle">@style/TitleText.Dark</item>
+        <item name="android:subtitleTextStyle">@style/SubtitleText.Dark</item>
+         <item name="android:background">@drawable/blue_ab_solid</item>
+        <!--<item name="android:backgroundStacked">@drawable/blue_ab_stacked_solid</item>-->
+        <item name="android:backgroundSplit">@drawable/blue_ab_bottom_solid</item>
+    </style>
+
+	<style name="ActionModeBlue" parent="@android:style/Widget.Holo.Light.ActionMode">	   	
+	    <item name="android:titleTextStyle">@style/TitleText.Dark</item>
+	   <!--<item name="android:background">@drawable/blue_cab_background_top</item>-->
+		<item name="android:background">#65ffffff</item>
+        <!--<item name="android:backgroundSplit">@drawable/blue_cab_background_bottom</item>-->
+	</style>
+
+	<style name="ActionButton.CloseMode.Blue" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">	   	
+	    <item name="android:paddingRight">0dp</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+
+  <style name="Blue.NoActionBar" parent="@style/Blue">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="Blue.Transparent" parent="@style/Blue">
+  	<item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    
+  <style name="Blue.ActionOverlay" parent="@style/Blue">
+  	<item name="android:windowActionBarOverlay">true</item>
+  </style>
+
+  <style name="DialogActivity" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+  <style name="DialogActivity" parent="@style/Blue">  	
+  </style>
+
+  <style name="Blue.DialogActivity" parent="@android:style/Theme.Holo.Light.Dialog"> 
+  	<item name="android:windowNoTitle">true</item> 	
+  	 <item name="android:textColorHighlight">#99737373</item>
+  	 <item name="android:textSelectHandleLeft">@drawable/blue_text_select_handle_left</item>
+     <item name="android:textSelectHandleRight">@drawable/blue_text_select_handle_right</item>
+     <item name="android:textSelectHandle">@drawable/blue_text_select_handle_middle</item>
+  </style>
+
+	<style name="ActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+	    <item name="android:paddingLeft">0dip</item>
+	    <item name="android:paddingRight">0dip</item>
+	</style>
+
+	<style name="TabTextBlue">
+	  <item name="android:textColor">#000000</item>
+      <item name="android:textSize">14sp</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:ellipsize">marquee</item>
+      <item name="android:maxLines">2</item>
+      <item name="android:maxWidth">180dip</item>
+  </style> 
+
+	<style name="TabBlue">
+      <item name="android:gravity">center_horizontal</item>
+      <item name="android:paddingLeft">22dip</item>
+      <item name="android:paddingRight">22dip</item>
+      <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+      <item name="android:background">@drawable/blue_tab_indicator_holo</item>
+      <item name="android:layout_width">0dip</item>
+      <item name="android:layout_weight">1</item>
+      <item name="android:minWidth">80dip</item>
+  </style>
+</resources>
