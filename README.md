@@ -1,4 +1,4 @@
-# epub-tools
+# InPublishing
 
 Con qualche settimana di ritardo, abbiamo pubblicato il nuovo repository 2019 di InPublishing
 Abbiamo fatto ordine nei vecchi progetti ed eliminato tutte la distribuzioni ed i file non più aggiornati.
