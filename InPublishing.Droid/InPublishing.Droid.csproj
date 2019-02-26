@@ -185,9 +185,6 @@
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="InPublishing.Core.MD">
-      <HintPath>..\packages\InPublishing.Core\InPublishing.Core.MD.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -702,6 +699,12 @@
     <AndroidResource Include="Resources\anim\doc_slide_right.xml" />
     <AndroidResource Include="Resources\anim\doc_slide_up.xml" />
     <AndroidResource Include="Resources\anim\doc_slide_down.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InPublishing.Core\InPublishing.Core.MD.csproj">
+      <Project>{C0A334D8-75AD-4BE6-971B-D7136D290D4E}</Project>
+      <Name>InPublishing.Core.MD</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AppSettings.xml" />

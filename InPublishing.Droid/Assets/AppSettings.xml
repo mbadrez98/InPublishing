@@ -12,7 +12,8 @@
 	<MenuSelColor>808080</MenuSelColor>
 	<ReadPdf>True</ReadPdf>
 	<BookPage>True</BookPage>
-    <DownloadUrl>https://my.server.com/</DownloadUrl>
+    <!--<DownloadUrl>http://192.168.1.72/inpub_edicola_v4/</DownloadUrl>-->
+    <DownloadUrl>http://edicola.inpublishing.it/</DownloadUrl>
 	<Notifications>True</Notifications>
 	<Singola>False</Singola>
 	<Edicola>True</Edicola>
@@ -21,23 +22,24 @@
 	<DownPasswd>False</DownPasswd>
 	<DownUtenti>True</DownUtenti>
 	<ShareDir>True</ShareDir>
-	<PublicKey>my.android.public.key</PublicKey>
-	<InpubVersion>6.6.5</InpubVersion>
-	<AppId>my.app.id</AppId>
+	<PublicKey>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwNj29RzMDcyvvDrfJuRhJttmUX5Xq7QO8o/yBhkeSr+eOC+t9M0+afrLJng08gFXKfcWu8KCXJXofwf48XnXhgWQQWsUbj8Fclf/4uO1PzYDBBk2VRxpfCLP1c3m5dFlCBfW0ZJ//6OaeBd2S/6FohuO9sA7SVM+RnCRD+jGT+v+3A9A5kzFZofX1MLisjKptXQ+RIzHiWL3GIL4Tw+2hFbU2epTyMQy1zYrWzv1b2bntck79HSGobwrAiJ8FqaTfKMIMO7LXvxmkdLtecTWu3Z8f3F75EwwdOikzx+/1H/LIObq/Led6xyQQPyxNFfziwzveRQRw4FYeHd1BdJuSwIDAQAB</PublicKey>
+	<InpubVersion>6.6.6</InpubVersion>
+	<AppId>QWVRRmVqUXZNRyswQTJ3WVNTYlJlZz09</AppId>
+    <!--<AppId>MVFjY3dOQ3IwRzl2RlRzbmlOb1RWUT09</AppId>-->
 	<PinEnabled>True</PinEnabled>
 	<PasswordReset>True</PasswordReset>
 	<EdicolaSearch>True</EdicolaSearch>
-	<AnalyticsID>UA-XXXXXXXX-X</AnalyticsID>
+	<AnalyticsID>UA-83459394-1</AnalyticsID>
 	<InAppPurchase>True</InAppPurchase>
 	<EdicolaOrder>0</EdicolaOrder>
 	<Credits>
 	<![CDATA[
-My Company
-My address
-My address 2
-Tel: 12-123456
-Email: mail@my.server.com
-Web: https://my.server.com
+MediaBOOK srl
+Via Peschiera 40
+42024 Castelnovo di Sotto RE
+Tel e Fax: 0522 683405
+Email: info@mediabook.net
+Web: http://www.mediabook.net
 	]]>
 </Credits>
 </Settings>

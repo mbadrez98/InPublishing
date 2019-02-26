@@ -1,65 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center_horizontal"
     android:background="#ffffffff">
-    <TextView
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblNomeApp"
-        android:gravity="center"
-        android:layout_marginTop="10dp" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblVersione"
-        android:gravity="center"
-        android:typeface="sans"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_marginBottom="10dp" />
-    <ImageView
-        android:src="@drawable/icon_big"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:id="@+id/imgLogo"
-        android:layout_marginBottom="20dp"
-        android:scaleType="centerInside" />
-    <TextView
-        android:text="@string/set_madeBy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblProductBy"
-        android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@android:color/secondary_text_light" />
-    <ImageView
-        android:src="@drawable/logo_crediti"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/imgCrediti"
-        android:scaleType="fitCenter"
-        android:layout_marginBottom="10dp" />
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView1"
-        android:layout_marginBottom="10dp">
+        android:id="@+id/linearLayout1"
+        android:layout_weight="1">
+        <TextView
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblNomeApp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
         <TextView
             android:text="Text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/lblCrediti"
-            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblVersione"
+            android:gravity="center"
+            android:typeface="sans"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@android:color/primary_text_light"
-            android:textSize="16dp" />
-    </ScrollView>
+            android:layout_marginBottom="10dp" />
+        <ImageView
+            android:src="@drawable/icon_big"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:id="@+id/imgLogo"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="@string/set_madeBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblProductBy"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/secondary_text_light" />
+        <ImageView
+            android:src="@drawable/logo_crediti"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/imgCrediti"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="10dp" />
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView1"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lblCrediti"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16dp" />
+        </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtLicense"
+        android:gravity="center_horizontal"
+        android:typeface="sans"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="12dp"
+        android:text="@string/about_license" />
 </LinearLayout>

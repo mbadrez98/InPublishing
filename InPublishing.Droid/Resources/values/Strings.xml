@@ -130,4 +130,5 @@
 	<string name = "gen_mailAddress">Mail address</string>
 	<string name = "pub_details">Details</string>
     <string name = "pub_downloadProgress">Download in progress</string>
+    <string name = "about_license">This app is made with InPublishing, released under <a href="https://github.com/mbadrez98/InPublishing/blob/master/LICENSE">GNU AGPL</a></string>
 </resources>

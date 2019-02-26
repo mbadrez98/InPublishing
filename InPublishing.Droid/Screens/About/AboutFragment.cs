@@ -10,6 +10,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Content.PM;
+using Android.Text.Method;
 
 namespace InPublishing
 {
@@ -36,9 +37,10 @@ namespace InPublishing
 			/*ImageView imgLogo = view.FindViewById<ImageView>(Resource.Id.imgLogo);
 			ImageView imgCrediti = view.FindViewById<ImageView>(Resource.Id.imgCrediti);*/
 			TextView lblCrediti = view.FindViewById<TextView>(Resource.Id.lblCrediti);
+            TextView txtLicenza = view.FindViewById<TextView>(Resource.Id.txtLicense);
 
-			//nomeApp
-			lblNomeApp.Text = Activity.ApplicationInfo.LoadLabel(Activity.PackageManager);
+            //nomeApp
+            lblNomeApp.Text = Activity.ApplicationInfo.LoadLabel(Activity.PackageManager);
 
 			//versione
 			lblVersione.Text = "InPublishing " + DataManager.Get<ISettingsManager>().Settings.InpubVersion;//Activity.PackageManager.GetPackageInfo(Activity.PackageName, 0).VersionName;
@@ -52,7 +54,9 @@ namespace InPublishing
 			//crediti
 			lblCrediti.Text = DataManager.Get<ISettingsManager>().Settings.Credits;
 
-			return view;
+            txtLicenza.MovementMethod = LinkMovementMethod.Instance;
+
+            return view;
 		}
 	}
 }
